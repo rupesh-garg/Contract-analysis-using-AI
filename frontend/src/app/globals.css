@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  /* Premium SaaS Palette (Zinc/Dark) */
+  --background: #09090b;
+  /* zinc-950 */
+  --foreground: #f4f4f5;
+  /* zinc-100 */
+
+  --primary: #ffffff;
+  /* white */
+  --primary-foreground: #000000;
+
+  --destructive: #ef4444;
+  /* red-500 (muted) */
+  --destructive-foreground: #ffffff;
+
+  --muted: #18181b;
+  /* zinc-900 */
+  --muted-foreground: #a1a1aa;
+  /* zinc-400 */
+
+  --border: #27272a;
+  /* zinc-800 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
